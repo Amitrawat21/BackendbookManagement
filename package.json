@@ -1,11 +1,9 @@
 {
-  "name": "backend",
+  "name": "c",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-   "start": "nodemon app.js"
-
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +16,6 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.2.4"
-  }
+  },
+  "description": ""
 }

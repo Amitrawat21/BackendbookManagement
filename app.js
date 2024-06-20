@@ -4,11 +4,12 @@ import userRouter from "./routes/userRoutes.js"
 import bookRouter from "./routes/bookRoutes.js"
 import cors from "cors"
 import "./dataConnect/Connect.js"
+import dotenv from "dotenv"
 
 
-
+dotenv.config()
 const app = express()
-const PORT = 8000
+const port = process.env.PORT || 8000
 
 
 
@@ -23,6 +24,6 @@ app.use('/book',bookRouter);
 
 
 
-app.listen(PORT , ()=>{
-    console.log(`port is running in ${PORT}`)
+app.listen(port , ()=>{
+    console.log(`port is running in ${port}`)
 })

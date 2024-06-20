@@ -1,5 +1,9 @@
 import mongoose from "mongoose";
-const DB = "mongodb+srv://AmitRawat:AmitRawat21@cluster0.v2znl.mongodb.net/BookManagement?retryWrites=true&w=majority"
+import dotenv from "dotenv"
+
+
+dotenv.config()
+const DB = process.env.MONGO_URL
 
 mongoose.connect(DB , {
     useUnifiedTopology :true,
